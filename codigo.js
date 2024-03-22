@@ -1,15 +1,15 @@
 let participante = "Federico Farias";
 let votante = 1155743908;
-let button = document.getElementById("button");
-button.addEventListener("click", calcular);
-let binario = document.getElementById("binario");
-binario.addEventListener("click", calcularDesdeBinario)
-var votantes = document.getElementById("votantes");
-votantes.innerText =  "Voto para " + participante + " del numero " + votante;
+let button = document.getElementById("button"); //Asignamos valor a la variable button
+button.addEventListener("click", calcular); //Al presionar el boton --> calcular
+let binario = document.getElementById("binario"); //Asignamos valor a la variable binario
+binario.addEventListener("click", calcularDesdeBinario) //Al presionar el boton --> calcularDesdeBinario
+var votantes = document.getElementById("votantes"); //Asignamos valor a la variable votante
+votantes.innerText =  `Voto para ${participante} del numero ${votante}`; // Concatenacion de texto
 
 
 function calcular(){
-let numeroDecimal = Number(input.value);
+let numeroDecimal = Number(input.value); 
 var resultadoEnDecimal = document.getElementById("resultado en binario");
 let numeroBinario = "";
 while (numeroDecimal != 0 && numeroDecimal != 1) {
