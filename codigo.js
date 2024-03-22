@@ -20,9 +20,7 @@ while (numeroDecimal != 0 && numeroDecimal != 1) {
 numeroBinario = `1${numeroBinario}`;
 
 for (let i = 0; numeroBinario.length%8 != 0; i++) {
-    numeroBinario = `0${numeroBinario}`;
-    }
-
+    numeroBinario = `0${numeroBinario}`;}
     resultadoEnDecimal.innerText = `El numero en binario es ${numeroBinario}`;
 }
 
