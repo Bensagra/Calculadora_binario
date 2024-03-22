@@ -1,5 +1,5 @@
-let participante = "Federico Farias";
-let votante = 1155743908;
+//let participante = "Federico Farias";
+//let votante = 1155743908;
 let button = document.getElementById("button"); //Asignamos valor a la variable button
 button.addEventListener("click", calcular); //Al presionar el boton --> calcular
 let binario = document.getElementById("binario"); //Asignamos valor a la variable binario
@@ -21,7 +21,7 @@ numeroBinario = `1${numeroBinario}`;
 
 for (let i = 0; numeroBinario.length%8 != 0; i++) {
     numeroBinario = `0${numeroBinario}`;}
-    resultadoEnDecimal.innerText = `El numero en binario es ${numeroBinario}`;
+    resultadoEnDecimal.innerText = `Tu numero decimal en binario es ${numeroBinario}`;
 }
 
 function calcularDesdeBinario(){
