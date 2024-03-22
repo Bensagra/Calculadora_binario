@@ -27,7 +27,7 @@ for (let i = 0; numeroBinario.length%8 != 0; i++) {
 function calcularDesdeBinario(){
     let numero = Number(input.value);
     let cifra = 0;
-   
+    let largo;
     let resultado = 0;
     var resultadoEnDecimal = document.getElementById("resultado en binario");
         for (let i = 0; i < numero.toString().length ; i++) {
@@ -38,21 +38,8 @@ function calcularDesdeBinario(){
      
         
     }
-    let largo;
-    largo = numero.toString().length;
-      //  while (numero != 0) {     
-        //cifra = numero % 10;     // obtengo la ultima cifra
-        //numero =Math.floor(numero / 10);    // se la quito al número
-        //nuevoNumero = nuevoNumero * 10 + cifra; // se la añado al nuevo número                                
-    // }   
-    //if (largo != numero.toString().length) {
-      //  for (let i = 0; largo > numero.toString().length; i++) {
-        //    numero = `${numero}0` 
-            
-        //}
-       
-    //}
-        console.log(largo);
+    
+        largo = numero.toString().length;
         for (let i = 0; i < Number(largo); i++) {
         cifra  = numero.toString()[i];
         resultado = Number(resultado) +  Number(cifra) * Math.pow(2, (Number(largo)-Number(i))-1);}
